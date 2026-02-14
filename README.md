@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Propuesta de Investigación - UNEMI
 
-## Getting Started
+Sitio web educativo desarrollado para la asignatura **Propuesta de Investigación** de la Universidad Estatal de Milagro (UNEMI).
 
-First, run the development server:
+## 📚 Descripción
+
+Este proyecto es una plataforma educativa que proporciona material de estudio estructurado en 4 unidades principales, cada una con subtemas específicos que guían a los estudiantes a través del proceso de desarrollo de una propuesta de investigación científica.
+
+## 🎯 Contenido del Curso
+
+### Unidad 1: El Problema de Investigación
+- Planteamiento del problema
+- Formulación del problema
+- Objetivos de la investigación
+- Justificación de la investigación
+
+### Unidad 2: Marco Teórico
+- Antecedentes de la investigación
+- Bases teóricas
+- Marco conceptual
+- Hipótesis y variables
+
+### Unidad 3: Marco Metodológico
+- Tipo y diseño de investigación
+- Población y muestra
+- Técnicas e instrumentos de recolección de datos
+- Procesamiento y análisis de datos
+
+### Unidad 4: Aspectos Administrativos
+- Cronograma de actividades
+- Recursos humanos y materiales
+- Presupuesto
+- Referencias bibliográficas
+
+## 🚀 Comenzar
+
+### Prerrequisitos
+- Node.js 18+ instalado
+- npm, yarn, pnpm o bun
+
+### Instalación
 
 ```bash
+# Clonar el repositorio
+git clone https://github.com/almacenero/unemi-educacion.git
+
+# Navegar al directorio
+cd unemi-educacion
+
+# Instalar dependencias
+npm install
+
+# Ejecutar servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el sitio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tecnologías Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 16** - Framework de React para producción
+- **React 19** - Biblioteca de interfaz de usuario
+- **TypeScript** - Tipado estático para JavaScript
+- **Tailwind CSS 4** - Framework de CSS utilitario
+- **ESLint** - Linter de código
 
-## Learn More
+## 📁 Estructura del Proyecto
 
-To learn more about Next.js, take a look at the following resources:
+```
+├── app/
+│   ├── components/      # Componentes reutilizables
+│   ├── data/           # Datos del curso y estructura
+│   ├── unidad-1/       # Páginas de la Unidad 1
+│   ├── unidad-2/       # Páginas de la Unidad 2
+│   ├── unidad-3/       # Páginas de la Unidad 3
+│   ├── unidad-4/       # Páginas de la Unidad 4
+│   ├── layout.tsx      # Layout principal
+│   └── page.tsx        # Página de inicio
+├── public/             # Archivos estáticos
+└── documents/          # Documentos de referencia
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Despliegue
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+El proyecto puede ser desplegado fácilmente en Vercel:
 
-## Deploy on Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/almacenero/unemi-educacion)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Scripts Disponibles
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run dev      # Inicia el servidor de desarrollo
+npm run build    # Construye la aplicación para producción
+npm run start    # Inicia el servidor de producción
+npm run lint     # Ejecuta el linter
+```
+
+## 👥 Contribuir
+
+Las contribuciones son bienvenidas. Por favor:
+
+1. Haz fork del proyecto
+2. Crea una rama para tu funcionalidad (`git checkout -b feature/NuevaFuncionalidad`)
+3. Commit tus cambios (`git commit -m 'Agregar nueva funcionalidad'`)
+4. Push a la rama (`git push origin feature/NuevaFuncionalidad`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT.
+
+## 📧 Contacto
+
+Universidad Estatal de Milagro (UNEMI)  
+Proyecto educativo - Propuesta de Investigación
+
+---
+
+Desarrollado con ❤️ para estudiantes de UNEMI
