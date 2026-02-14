@@ -1,4 +1,4 @@
-import Link from "next/link";
+import SubtemaTemplate from "../../components/SubtemaTemplate";
 import { getUnidad, getSubtema } from "../../data/course-structure";
 import { notFound } from "next/navigation";
 
@@ -23,16 +23,14 @@ export default async function SubtemaPage({
   const nextSubtema = currentIndex < unidad.subtemas.length - 1 ? unidad.subtemas[currentIndex + 1] : null;
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Breadcrumb */}
-      <nav className="mb-8 text-sm">
-        <Link href="/" className="text-blue-600 hover:text-blue-800">
-          Inicio
-        </Link>
-        <span className="mx-2 text-gray-500">/</span>
-        <Link href={`/unidad-${unidad.id}`} className="text-blue-600 hover:text-blue-800">
-          Unidad {unidad.id}
-        </Link>
+    <SubtemaTemplate
+      unidad={unidad}
+      subtema={subtema}
+      prevSubtema={prevSubtema}
+      nextSubtema={nextSubtema}
+    />
+  );
+}
         <span className="mx-2 text-gray-500">/</span>
         <span className="text-gray-700">{subtema.titulo}</span>
       </nav>
