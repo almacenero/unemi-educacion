@@ -29,7 +29,7 @@ export default function Navigation() {
               <Link
                 key={unidad.id}
                 href={`/unidad-${unidad.id}`}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 ${
                   pathname.startsWith(`/unidad-${unidad.id}`)
                     ? 'bg-blue-900 shadow-md scale-105'
                     : 'bg-blue-700/50 hover:bg-blue-700 hover:scale-105'
@@ -43,7 +43,7 @@ export default function Navigation() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-blue-700 transition-colors"
+            className="md:hidden px-3 py-2.5 rounded-lg hover:bg-blue-700 transition-colors"
             aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,7 +64,7 @@ export default function Navigation() {
                 key={unidad.id}
                 href={`/unidad-${unidad.id}`}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                className={`block px-5 py-3.5 rounded-lg text-sm font-medium transition-colors ${
                   pathname.startsWith(`/unidad-${unidad.id}`)
                     ? 'bg-blue-900'
                     : 'bg-blue-700/50 hover:bg-blue-700'

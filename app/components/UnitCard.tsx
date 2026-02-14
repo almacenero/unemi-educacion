@@ -11,14 +11,14 @@ export default function UnitCard({ id, titulo, descripcion, subtemasCount }: Uni
   return (
     <Link 
       href={`/unidad-${id}`}
-      className="group block bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gray-100 hover:border-blue-400 hover:-translate-y-1"
+      className="group block bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gray-100 hover:border-blue-300 hover:-translate-y-1"
     >
-      <div className="bg-linear-to-r from-blue-500 to-blue-600 px-6 py-5">
+      <div className="bg-linear-to-r from-blue-500 to-blue-600 px-8 py-6">
         <h2 className="text-xl sm:text-2xl font-bold text-white group-hover:scale-105 transition-transform">
           {titulo}
         </h2>
       </div>
-      <div className="px-6 py-5">
+      <div className="px-8 py-7">
         <p className="text-gray-700 mb-6 leading-relaxed">
           {descripcion}
         </p>

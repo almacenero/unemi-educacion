@@ -11,10 +11,10 @@ interface UnidadTemplateProps {
 export default function UnidadTemplate({ unidad, prevUnidad, nextUnidad }: UnidadTemplateProps) {
   return (
     <div className="min-h-screen bg-linear-to-b from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-10 sm:py-16">
         {/* Breadcrumb */}
         <nav className="mb-6 sm:mb-8 flex items-center gap-2 text-sm">
-          <Link href="/" className="text-blue-600 hover:text-blue-800 font-medium transition-colors">
+          <Link href="/" className="text-blue-600 hover:text-blue-800 font-medium transition-colors px-2 py-1">
             🏠 Inicio
           </Link>
           <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -24,8 +24,8 @@ export default function UnidadTemplate({ unidad, prevUnidad, nextUnidad }: Unida
         </nav>
 
         {/* Header */}
-        <div className="bg-linear-to-r from-blue-600 to-blue-800 rounded-2xl shadow-xl px-6 sm:px-10 py-10 sm:py-14 mb-10 sm:mb-12 text-white">
-          <div className="inline-block bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold mb-4">
+        <div className="bg-linear-to-r from-blue-600 to-blue-800 rounded-2xl shadow-xl px-8 sm:px-12 lg:px-16 py-12 sm:py-16 mb-12 sm:mb-16 text-white">
+          <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-4">
             Unidad {unidad.id} de 4
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
@@ -48,7 +48,7 @@ export default function UnidadTemplate({ unidad, prevUnidad, nextUnidad }: Unida
               Subtemas
             </h2>
           </div>
-          <div className="grid gap-4">
+          <div className="grid gap-5">
             {unidad.subtemas.map((subtema) => (
               <SubtemaCard
                 key={subtema.id}
@@ -66,12 +66,12 @@ export default function UnidadTemplate({ unidad, prevUnidad, nextUnidad }: Unida
             {prevUnidad && (
               <Link 
                 href={`/unidad-${prevUnidad}`}
-                className="group w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-white border-2 border-gray-300 text-gray-700 rounded-xl hover:border-blue-500 hover:text-blue-600 transition-all shadow-sm hover:shadow-md"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 rounded-xl hover:border-blue-500 hover:text-blue-600 transition-all shadow-sm hover:shadow-md font-semibold"
               >
-                <svg className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
-                <span className="font-semibold">Unidad {prevUnidad}</span>
+                <span>Unidad {prevUnidad}</span>
               </Link>
             )}
           </div>
@@ -79,10 +79,10 @@ export default function UnidadTemplate({ unidad, prevUnidad, nextUnidad }: Unida
             {nextUnidad && (
               <Link 
                 href={`/unidad-${nextUnidad}`}
-                className="group w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all shadow-md hover:shadow-lg"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all shadow-md hover:shadow-lg font-semibold"
               >
-                <span className="font-semibold">Unidad {nextUnidad}</span>
-                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <span>Unidad {nextUnidad}</span>
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
