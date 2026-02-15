@@ -14,8 +14,8 @@ export interface Unidad {
 export const courseData: Unidad[] = [
   {
     id: 1,
-    titulo: "Unidad 1: El Problema de Investigación",
-    descripcion: "Identificación y planteamiento del problema de investigación como punto de partida del proceso investigativo.",
+    titulo: "Unidad 1: CONTEXTUALIZACIÓN DE LA INVESTIGACIÓN Y DEFINICIÓN DEL TEMA DE ESTUDIO",
+    descripcion: "Resultado de Aprendizaje 1: Reconocerá los enfoques cuantitativo y cualitativo de la investigación científica y seleccionará un tema de estudio pertinente a la realidad profesional y académica.",
     subtemas: [
       {
         id: "1-1",
