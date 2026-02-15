@@ -217,8 +217,8 @@ export const courseData: Unidad[] = [
   },
   {
     id: 3,
-    titulo: "Unidad 3: Marco Metodológico",
-    descripcion: "Métodos, técnicas y procedimientos que se utilizarán para desarrollar la investigación.",
+    titulo: "UNIDAD 3: DISEÑO METODOLÓGICO DE LA INVESTIGACIÓN",
+    descripcion: "Resultado de Aprendizaje 3: Aplicará la metodología de la investigación cuantitativa y cualitativa para estructurar la fase empírica del estudio",
     subtemas: [
       {
         id: "3-1",
