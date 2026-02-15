@@ -36,7 +36,7 @@ export default function UnidadTemplate({ unidad, prevUnidad, nextUnidad }: Unida
           </p>
         </div>
 
-        {/* Subtemas */}
+        {/* Temas y Subtemas */}
         <div className="mb-10 sm:mb-12">
           <div className="flex items-center gap-3 mb-6 sm:mb-8">
             <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
@@ -45,17 +45,28 @@ export default function UnidadTemplate({ unidad, prevUnidad, nextUnidad }: Unida
               </svg>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-              Subtemas
+              Temas y Subtemas
             </h2>
           </div>
-          <div className="grid gap-5">
-            {unidad.subtemas.map((subtema) => (
-              <SubtemaCard
-                key={subtema.id}
-                unidadId={unidad.id}
-                subtemaId={subtema.id}
-                titulo={subtema.titulo}
-              />
+          <div className="space-y-8">
+            {unidad.temas.map((tema) => (
+              <div key={tema.id} className="bg-white rounded-xl shadow-md border-2 border-blue-100 overflow-hidden">
+                {/* Tema Header */}
+                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 px-6 py-4 border-b-2 border-blue-200">
+                  <h3 className="text-xl font-bold text-blue-900">{tema.titulo}</h3>
+                </div>
+                {/* Subtemas */}
+                <div className="p-4 grid gap-4">
+                  {tema.subtemas.map((subtema) => (
+                    <SubtemaCard
+                      key={subtema.id}
+                      unidadId={unidad.id}
+                      subtemaId={subtema.id}
+                      titulo={subtema.titulo}
+                    />
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

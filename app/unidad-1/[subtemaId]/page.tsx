@@ -1,5 +1,5 @@
 import SubtemaTemplate from "../../components/SubtemaTemplate";
-import { getUnidad, getSubtema } from "../../data/course-structure";
+import { getUnidad, getSubtema, getAllSubtemas } from "../../data/course-structure";
 import { notFound } from "next/navigation";
 
 const UNIDAD_ID = 1;
@@ -18,9 +18,10 @@ export default async function SubtemaPage({
   }
 
   // Encontrar el índice del subtema actual
-  const currentIndex = unidad.subtemas.findIndex(s => s.id === subtemaId);
-  const prevSubtema = currentIndex > 0 ? unidad.subtemas[currentIndex - 1] : null;
-  const nextSubtema = currentIndex < unidad.subtemas.length - 1 ? unidad.subtemas[currentIndex + 1] : null;
+  const todosSubtemas = getAllSubtemas(UNIDAD_ID);
+  const currentIndex = todosSubtemas.findIndex(s => s.id === subtemaId);
+  const prevSubtema = currentIndex > 0 ? todosSubtemas[currentIndex - 1] : null;
+  const nextSubtema = currentIndex < todosSubtemas.length - 1 ? todosSubtemas[currentIndex + 1] : null;
 
   return (
     <SubtemaTemplate

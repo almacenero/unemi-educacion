@@ -279,7 +279,7 @@ export default function Home() {
                 id={unidad.id}
                 titulo={unidad.titulo}
                 descripcion={unidad.descripcion}
-                subtemasCount={unidad.subtemas.length}
+                subtemasCount={unidad.temas.reduce((total, tema) => total + tema.subtemas.length, 0)}
               />
             ))}
           </div>
