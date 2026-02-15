@@ -115,8 +115,8 @@ export const courseData: Unidad[] = [
   },
   {
     id: 2,
-    titulo: "Unidad 2: Marco Teórico",
-    descripcion: "Fundamentos teóricos y conceptuales que sustentan la investigación.",
+    titulo: "UNIDAD 2: FUNDAMENTACIÓN TEÓRICA Y USO DE NORMATIVA ACADÉMICA",
+    descripcion: "Resultado de Aprendizaje 2: Desarrollará el marco teórico de la investigación mediante la revisión de literatura científica y el uso adecuado de normas APA.",
     subtemas: [
       {
         id: "2-1",
