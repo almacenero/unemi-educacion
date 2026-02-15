@@ -60,7 +60,7 @@ export default function Home() {
         {/* Units Grid */}
         <div className="mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-10">
-            📚 Unidades del Curso
+            📚 Unidades de la asignatura
           </h2>
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
             {courseData.map((unidad) => (
