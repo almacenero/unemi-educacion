@@ -10,7 +10,7 @@ export default async function SubtemaPage({
   params: Promise<{ subtemaId: string }>
 }) {
   const { subtemaId } = await params;
-  const unidad = getUn idad(UNIDAD_ID);
+  const unidad = getUnidad(UNIDAD_ID);
   const subtema = getSubtema(UNIDAD_ID, subtemaId);
 
   if (!unidad || !subtema) {
