@@ -371,8 +371,8 @@ export const courseData: Unidad[] = [
   },
   {
     id: 4,
-    titulo: "Unidad 4: Aspectos Administrativos",
-    descripcion: "Planificación de recursos, tiempo y presupuesto necesarios para la investigación.",
+    titulo: "UNIDAD 4: INTEGRACIÓN Y PRESENTACIÓN DE LA PROPUESTA DE INVESTIGACIÓN",
+    descripcion: "Resultado de Aprendizaje 4: Integrará y presentará la propuesta de investigación completa, aplicando criterios metodológicos, teóricos y académicos.",
     subtemas: [
       {
         id: "4-1",
